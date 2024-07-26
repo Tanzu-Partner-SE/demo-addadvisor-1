@@ -1,0 +1,30 @@
+Spring Application Advisor CLI Version: v0.0.7
+com.vmware.tanzu.spring.advisor.cli.ProcessRunner$ProcessFailureException: Command: [/Users/reddye/Documents/Tanzu/spring/demo-addadvisor-1/mvnw -v -B]
+
+Error:
+
+Error: JAVA_HOME is not defined correctly.
+  We cannot execute /usr/bin/java/bin/java
+
+
+Output:
+
+
+
+	at com.vmware.tanzu.spring.advisor.cli.ProcessRunner.informAboutErrors(ProcessRunner.java:99)
+	at com.vmware.tanzu.spring.advisor.cli.ProcessRunner.runWithOutput(ProcessRunner.java:70)
+	at com.vmware.tanzu.spring.advisor.cli.ProcessRunnerDecorator.runWithOutput(ProcessRunnerDecorator.java:25)
+	at com.vmware.tanzu.spring.advisor.cli.tools.BuildToolInfoExtractor.getBuildToolInfo(BuildToolInfoExtractor.java:32)
+	at com.vmware.tanzu.spring.advisor.cli.buildconfig.BuildConfigurationGetCommand.runCommand(BuildConfigurationGetCommand.java:78)
+	at com.vmware.tanzu.spring.advisor.cli.Command.run(Command.java:12)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2030)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2465)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2457)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2419)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2277)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2421)
+	at picocli.CommandLine.execute(CommandLine.java:2174)
+	at com.vmware.tanzu.spring.advisor.cli.CommandLineApplication.run(CommandLineApplication.java:20)
+	at com.vmware.tanzu.spring.advisor.cli.CommandLineApplication.main(CommandLineApplication.java:8)
+	at java.base@21.0.3/java.lang.invoke.LambdaForm$DMH/sa346b79c.invokeStaticInit(LambdaForm$DMH)
